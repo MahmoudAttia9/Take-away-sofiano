@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <!-- Mobile-optimized viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
-    <meta name="description" content="Sofiano Cafe - Take Away Menu - Ramadan Edition">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+    <meta name="description" content="Sofiano Cafe - Take Away Menu - Eid Edition">
     <meta name="theme-color" content="#0F2B2B">
-    
+
     <!-- Mobile Web App Capable -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Sofiano Takeaway">
-    
+
     <meta name="format-detection" content="telephone=no">
-    
+
     <!-- Resource Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    
-    <!-- Fonts & Icons -->
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Reem+Kufi:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
-    <!-- Fonts CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Reem+Kufi:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap">
 
-    <title>Sofiano Cafe - Take Away | رمضان كريم</title>
-    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Reem+Kufi:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Sofiano Cafe - Take Away | عيدكم مبارك</title>
+
     <style>
         /* ========================================
            ROOT VARIABLES & PERFORMANCE OPTIMIZATION
@@ -42,7 +42,7 @@
             --white: #FFFFFF;
             --text-dark: #1B4D4D;
         }
-        
+
         /* Hardware Acceleration Class */
         .gpu-accelerated {
             transform: translateZ(0);
@@ -56,7 +56,7 @@
             box-sizing: border-box;
             -webkit-tap-highlight-color: transparent;
         }
-        
+
         body {
             font-family: 'Cairo', 'Poppins', sans-serif;
             background: #FFF9F0;
@@ -64,7 +64,6 @@
             background-image: radial-gradient(#D4AF37 0.5px, transparent 0.5px), radial-gradient(#D4AF37 0.5px, #FFF9F0 0.5px);
             background-size: 20px 20px;
             background-position: 0 0, 10px 10px;
-            background-attachment: fixed;
             color: var(--text-dark);
             overflow-x: hidden;
             min-height: 100vh;
@@ -91,13 +90,16 @@
         /* Twinkling Stars Background */
         .stars {
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: 
-                radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0));
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                radial-gradient(2px 2px at 20px 30px, #eee, rgba(0, 0, 0, 0)),
+                radial-gradient(2px 2px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+                radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+                radial-gradient(2px 2px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+                radial-gradient(2px 2px at 130px 80px, #fff, rgba(0, 0, 0, 0));
             background-repeat: repeat;
             background-size: 200px 200px;
             opacity: 0.3;
@@ -105,8 +107,15 @@
         }
 
         @keyframes twinkle {
-            0% { opacity: 0.3; transform: translateY(0); }
-            100% { opacity: 0.5; transform: translateY(-10px); }
+            0% {
+                opacity: 0.3;
+                transform: translateY(0);
+            }
+
+            100% {
+                opacity: 0.5;
+                transform: translateY(-10px);
+            }
         }
 
         /* Shape Divider Bottom */
@@ -133,9 +142,12 @@
         }
 
         /* HANGING DECORATIONS */
-        .ramadan-decorations {
+        .eid-decorations {
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             pointer-events: none;
             z-index: 5;
         }
@@ -143,25 +155,48 @@
         .hanging-item {
             position: absolute;
             transform-origin: top center;
-            will-change: transform;
         }
 
         .string {
             position: absolute;
-            top: 0; left: 50%;
+            top: 0;
+            left: 50%;
             width: 1px;
             background: rgba(212, 175, 55, 0.6);
             transform: translateX(-50%);
         }
 
-        .swing-slow { animation: swing 4s infinite ease-in-out alternate; }
-        .swing-med { animation: swing 3.5s infinite ease-in-out alternate-reverse; }
-        .swing-fast { animation: swing 3s infinite ease-in-out alternate; }
+        .swing-slow {
+            animation: swing 4s infinite ease-in-out alternate;
+        }
 
-        .decor-1 { left: 10%; height: 140px; }
-        .decor-2 { left: 25%; height: 90px; }
-        .decor-3 { left: 85%; height: 160px; }
-        .decor-4 { left: 70%; height: 100px; }
+        .swing-med {
+            animation: swing 3.5s infinite ease-in-out alternate-reverse;
+        }
+
+        .swing-fast {
+            animation: swing 3s infinite ease-in-out alternate;
+        }
+
+        .decor-1 {
+            left: 10%;
+            height: 140px;
+        }
+
+        .decor-2 {
+            left: 25%;
+            height: 90px;
+        }
+
+        .decor-3 {
+            left: 85%;
+            height: 160px;
+        }
+
+        .decor-4 {
+            left: 70%;
+            height: 100px;
+        }
 
         .hanging-item i {
             color: var(--gold);
@@ -172,12 +207,22 @@
             transform: translateX(-50%);
             font-size: 2rem;
         }
-        
-        .decor-2 i, .decor-4 i { font-size: 1.2rem; color: var(--gold-glow); bottom: -12px; }
+
+        .decor-2 i,
+        .decor-4 i {
+            font-size: 1.2rem;
+            color: var(--gold-glow);
+            bottom: -12px;
+        }
 
         @keyframes swing {
-            0% { transform: rotate(3deg); }
-            100% { transform: rotate(-3deg); }
+            0% {
+                transform: rotate(3deg);
+            }
+
+            100% {
+                transform: rotate(-3deg);
+            }
         }
 
         /* LOGO & TEXT */
@@ -194,13 +239,20 @@
             height: auto;
             display: block;
             margin: 0 auto 10px;
-            filter: drop-shadow(0 15px 30px rgba(0,0,0,0.3));
+            filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.3));
             animation: floatLogo 6s ease-in-out infinite;
         }
 
         @keyframes floatLogo {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-8px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
         }
 
         .logo-text {
@@ -208,7 +260,7 @@
             font-size: 3.5rem;
             font-weight: 700;
             color: var(--gold);
-            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             margin: 0;
             line-height: 1;
         }
@@ -222,7 +274,7 @@
             letter-spacing: 1px;
         }
 
-        .ramadan-badge {
+        .eid-badge {
             background: rgba(212, 175, 55, 0.15);
             border: 1px solid var(--gold);
             color: var(--white);
@@ -235,89 +287,227 @@
             font-size: 1.2rem;
         }
 
-        .ramadan-text-en {
+        .eid-text-en {
             font-family: 'Reem Kufi', sans-serif;
             color: var(--gold);
             font-size: 1rem;
             letter-spacing: 4px;
             margin-top: 8px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
             font-weight: 600;
             text-transform: uppercase;
         }
 
         /* ========================================
-           NAV & MENU 
+           NAV & MENU (PREMIUM DESIGN)
         ======================================== */
         .category-nav {
             padding: 15px 0;
             position: sticky;
             top: 0;
-            background: rgba(255, 249, 240, 0.95);
-            backdrop-filter: blur(10px);
+            background: linear-gradient(90deg, rgba(255, 249, 240, 0.96), rgba(246, 193, 131, 0.06), rgba(207, 239, 224, 0.25));
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 24px rgba(15, 43, 43, 0.08);
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
             border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .category-head {
+            max-width: 960px;
+            margin: 0 auto 10px;
+            padding: 0 15px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .category-head h3 {
+            font-family: 'Reem Kufi', sans-serif;
+            color: var(--dark-teal);
+            font-size: 1.05rem;
+            letter-spacing: 0.3px;
+        }
+
+        .category-head span {
+            font-size: 0.72rem;
+            color: #5e7f7e;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         .category-pills {
             display: flex;
             gap: 10px;
             overflow-x: auto;
-            padding: 0 15px;
+            padding: 0 15px 2px;
             scrollbar-width: none;
+            scroll-snap-type: x mandatory;
+            max-width: 960px;
+            margin: 0 auto;
         }
-        .category-pills::-webkit-scrollbar { display: none; }
+
+        .category-pills::-webkit-scrollbar {
+            display: none;
+        }
 
         .category-btn {
-            padding: 8px 20px;
-            border: 1px solid var(--navy-teal);
-            background: transparent;
+            padding: 8px 12px;
+            border: 1px solid rgba(15, 43, 43, 0.35);
+            background: rgba(255, 255, 255, 0.85);
             color: var(--navy-teal);
             border-radius: 50px;
             font-family: 'Cairo', sans-serif;
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             cursor: pointer;
             white-space: nowrap;
             display: flex;
             align-items: center;
-            gap: 6px;
-            transition: transform 0.2s, background 0.2s;
+            gap: 7px;
+            transition: transform 0.2s, background 0.2s, box-shadow 0.2s, border-color 0.2s;
+            box-shadow: 0 2px 6px rgba(15, 43, 43, 0.05);
+            scroll-snap-align: center;
+        }
+
+        .category-btn .icon-badge {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.18), rgba(255, 255, 255, 0.9));
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            color: #815f1e;
+            font-size: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .category-btn .labels {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0;
+            line-height: 1.2;
+            overflow: hidden;
+        }
+
+        .category-btn .item-count {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.55rem;
+            color: #999;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 1px 5px;
+            border-radius: 8px;
+            margin-right: 5px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+
+        .category-btn.active .item-count {
+            color: var(--gold-glow);
+            background: rgba(249, 229, 176, 0.15);
+        }
+
+        .category-btn .label-ar {
+            font-size: 0.82rem;
+            font-weight: 800;
+            color: #143b3a;
+        }
+
+        /* Hide English name on mobile by default - show on large screens */
+        .category-btn .label-en {
+            display: none;
         }
 
         .category-btn.active {
-            background: var(--navy-teal);
-            color: var(--gold);
+            background: linear-gradient(120deg, #0f2b2b, #1b4d4d);
+            color: var(--gold-glow);
             border-color: var(--navy-teal);
-            transform: scale(1.05);
-            box-shadow: 0 3px 8px rgba(15, 43, 43, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(15, 43, 43, 0.22);
         }
 
+        .category-btn.active .icon-badge {
+            background: linear-gradient(135deg, rgba(249, 229, 176, 0.95), rgba(212, 175, 55, 0.85));
+            color: #0f2b2b;
+            border-color: rgba(249, 229, 176, 0.7);
+        }
+
+        .category-btn.active .label-ar,
+        .category-btn.active .label-en {
+            color: var(--gold-glow);
+        }
+
+        .category-btn:hover {
+            transform: translateY(-2px);
+            border-color: var(--gold);
+        }
+
+        /* Content Visibility Optimization */
         .menu-category {
             content-visibility: auto;
-            contain-intrinsic-size: 800px;
-            margin-bottom: 40px;
+            contain-intrinsic-size: 1000px;
+            margin-bottom: 45px;
+            animation: fadeInUp 0.4s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .menu-container {
-            max-width: 900px;
-            margin: 25px auto;
+            max-width: 920px;
+            margin: 20px auto;
             padding: 0 15px;
+        }
+
+        .menu-intro {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(255, 255, 255, 0.85), rgba(207, 239, 224, 0.35));
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            border-radius: 16px;
+            padding: 14px 18px;
+            margin: 8px 0 22px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(15, 43, 43, 0.05);
+        }
+
+        .menu-intro h2 {
+            font-family: 'Reem Kufi', sans-serif;
+            color: var(--dark-teal);
+            margin-bottom: 6px;
+            font-size: 1.15rem;
+        }
+
+        .menu-intro p {
+            color: #265a59;
+            font-size: 0.88rem;
         }
 
         .category-title {
             text-align: center;
             font-family: 'Reem Kufi', sans-serif;
-            font-size: 2rem;
+            font-size: 1.9rem;
             color: var(--navy-teal);
-            margin-bottom: 20px;
+            margin-bottom: 8px;
             position: relative;
             display: inline-block;
             width: 100%;
         }
-        
-        .category-title::before, .category-title::after {
+
+        .category-title::before,
+        .category-title::after {
             content: '';
             display: inline-block;
             width: 30px;
@@ -327,71 +517,189 @@
             margin: 0 10px;
         }
 
-        .menu-table-container {
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.03); 
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            overflow: hidden;
-            position: relative;
+        .category-subtitle {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.72rem;
+            color: #7a9e9d;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
-        /* Gold side strip */
-        .menu-table-container::after {
-            content: '';
-            position: absolute;
-            right: 0; top: 0; bottom: 0;
-            width: 4px;
-            background: var(--gold);
-            opacity: 0.6;
+        /* CARD-BASED MENU GRID */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+            padding: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
         }
 
         .menu-item {
-            display: grid;
-            grid-template-columns: 1fr auto auto 1fr;
-            gap: 12px;
-            padding: 16px;
-            align-items: center;
-            border-bottom: 1px solid #f2f2f2;
-            transition: background 0.2s;
+            background: #fff;
+            border-radius: 14px;
+            padding: 18px 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .menu-item:hover { background-color: rgba(212, 175, 55, 0.03); }
-        .menu-item:last-child { border-bottom: none; }
-        
-        .item-name-ar { font-weight: 700; color: var(--navy-teal); font-size: 1.05rem; }
-        .item-description { font-size: 0.8rem; color: #888; margin-top: 4px; font-style: italic; }
-        .item-name-en { font-size: 0.85rem; color: #999; text-align: left; }
-        
-        .price-s, .price-d {
+        .menu-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--gold), rgba(212, 175, 55, 0.3));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.12);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .menu-item:hover::before {
+            opacity: 1;
+        }
+
+        .item-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .item-names {
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 1;
+            min-width: 0;
+            overflow: hidden;
+        }
+
+        .item-name-ar,
+        .item-name-en {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .item-name-ar {
+            font-family: 'Cairo', sans-serif;
+            font-weight: 700;
+            color: var(--navy-teal);
+            font-size: 1.1rem;
+            line-height: 1.25;
+        }
+
+        .item-name-en {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.78rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 1px;
+        }
+
+        .item-dots {
+            flex-grow: 1;
+            border-bottom: 2px dotted rgba(212, 175, 55, 0.25);
+            margin: 0 14px 6px 14px;
+            min-width: 25px;
+        }
+
+        .item-prices {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .price-badge {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #fffdf7, #fdf8ef);
+            border: 1px solid rgba(212, 175, 55, 0.18);
+            border-radius: 10px;
+            padding: 5px 12px;
+            min-width: 52px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover .price-badge {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.1);
+        }
+
+        .price-badge span.size {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.55rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1px;
+            font-weight: 600;
+        }
+
+        .price-badge span.currency {
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.5rem;
+            color: #bbb;
+            margin-top: 1px;
+        }
+
+        .price-badge span.amount {
             font-family: 'Poppins', sans-serif;
             font-weight: 700;
             color: #C59D5F;
-            font-size: 1.15rem;
-            width: 50px;
-            text-align: center;
-            background: #fdfdfd;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 4px 0;
+            font-size: 1.1rem;
+            line-height: 1;
         }
-        
-        .price-na { color: #eee; background: transparent; border-color: transparent; }
 
-        .menu-header {
-            display: grid;
-            grid-template-columns: 1fr auto auto 1fr;
-            gap: 12px;
-            padding: 12px 16px;
-            background: linear-gradient(to left, var(--navy-teal), var(--dark-teal));
+        .item-description {
+            font-size: 0.78rem;
+            color: #777;
+            margin-top: 8px;
+            background: linear-gradient(135deg, #fdfbf7, #faf6ee);
+            padding: 8px 12px;
+            border-radius: 8px;
+            border-right: 3px solid var(--gold);
+            line-height: 1.5;
+        }
+
+        /* Category Note */
+        .category-note {
+            grid-column: 1 / -1;
+            padding: 14px;
+            background: rgba(212, 175, 55, 0.04);
+            font-size: 0.82rem;
+            text-align: center;
+            color: var(--dark-teal);
+            border: 1px dashed rgba(212, 175, 55, 0.5);
+            border-radius: 12px;
+            margin-top: 10px;
+        }
+
+        .category-note i {
             color: var(--gold);
-            font-size: 0.9rem;
-            font-weight: 700;
+            margin-left: 6px;
         }
-        .menu-header div:nth-child(2), .menu-header div:nth-child(3) {
-            width: 50px; text-align: center;
-        }
-        .menu-header div:last-child { text-align: left; }
 
         /* ========================================
            SCROLL TO TOP
@@ -408,7 +716,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             border: 2px solid var(--gold);
             cursor: pointer;
             opacity: 0;
@@ -416,10 +724,21 @@
             transition: all 0.3s ease;
             z-index: 900;
             font-size: 1.2rem;
+            -webkit-appearance: none;
+            appearance: none;
         }
 
-        .scroll-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
-        .scroll-top-btn:hover { transform: translateY(-5px); background: var(--gold); color: var(--navy-teal); }
+        .scroll-top-btn.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .scroll-top-btn:hover {
+            transform: translateY(-5px);
+            background: var(--gold);
+            color: var(--navy-teal);
+        }
 
         /* ========================================
            FOOTER
@@ -432,6 +751,54 @@
             margin-top: 50px;
             border-top: 4px solid var(--gold);
             position: relative;
+            overflow: hidden;
+        }
+
+        .footer-text {
+            font-size: 1rem;
+            line-height: 2;
+            margin-bottom: 5px;
+        }
+
+        .footer-text a {
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.2s;
+        }
+
+        .footer-text a:hover {
+            color: var(--gold-glow);
+        }
+
+        .footer-events {
+            margin-top: 10px;
+            font-size: 0.95rem;
+            color: var(--gold-glow);
+        }
+
+        .footer-copyright {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .footer-section::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(246, 193, 131, 0.15), transparent 70%);
         }
 
         .footer-title {
@@ -442,9 +809,10 @@
         }
 
         .social-icon {
-            width: 42px; height: 42px;
+            width: 42px;
+            height: 42px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.05);
+            background: rgba(255, 255, 255, 0.05);
             color: var(--gold);
             display: inline-flex;
             align-items: center;
@@ -452,72 +820,188 @@
             margin: 0 8px;
             text-decoration: none;
             border: 1px solid rgba(212, 175, 55, 0.3);
-            transition: 0.3s;
+            transition: all 0.3s ease;
         }
-        
+
         .social-icon:hover {
             background: var(--gold);
             color: var(--navy-teal);
             transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
         }
 
-        /* ========================================
-           RESPONSIVE TWEAKS
-        ======================================== */
-        @media (max-width: 768px) {
-            .logo-text { font-size: 2.8rem; }
-            .header-section { min-height: 380px; padding-top: 60px; }
-            
-            /* Simplify list for mobile */
-            .menu-header { display: none; }
-            .menu-item {
+        /* === Desktop/Tablet: Full card-style category pills === */
+        @media (min-width: 768px) {
+            .category-btn {
+                padding: 10px 14px;
+                border-radius: 16px;
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 8px;
+                min-width: 140px;
+                text-align: right;
+            }
+
+            .category-btn .icon-badge {
+                width: 34px;
+                height: 34px;
+                border-radius: 10px;
+                font-size: 0.9rem;
+            }
+
+            .category-btn .labels {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .category-btn .label-en {
                 display: block;
-                position: relative;
-                padding: 15px;
+                font-size: 0.62rem;
+                opacity: 0.65;
+                font-family: 'Poppins', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 0.6px;
             }
-            .item-names { margin-bottom: 10px; }
-            
-            /* Price badges */
-            .menu-item .price-s, .menu-item .price-d {
-                display: inline-block;
-                margin-left: 8px;
-                font-size: 1rem;
-                padding: 5px 12px;
-                width: auto;
+
+            .category-btn .item-count {
+                margin-right: 0;
+                margin-top: 2px;
             }
-            .menu-item .price-s::before { content: 'S: '; font-size: 0.8rem; color: #999; font-weight: 400; }
-            .menu-item .price-d::before { content: 'D: '; font-size: 0.8rem; color: #999; font-weight: 400; }
-            
-            .item-name-en { display: block; font-size: 0.85rem; margin-top: 5px; color: #999; }
-            
-            /* Hide empty prices on mobile to save space */
-            .price-na { display: none; }
+        }
+
+        /* === 320px - Very Small Screens === */
+        @media (max-width: 380px) {
+            .category-btn {
+                padding: 6px 10px;
+                gap: 5px;
+            }
+
+            .category-btn .icon-badge {
+                width: 24px;
+                height: 24px;
+                font-size: 0.65rem;
+            }
+
+            .category-btn .label-ar {
+                font-size: 0.72rem;
+            }
+
+            .category-btn .item-count {
+                font-size: 0.48rem;
+                padding: 0 4px;
+            }
+
+            .menu-item {
+                padding: 12px 14px;
+            }
+
+            .item-name-ar {
+                font-size: 0.92rem;
+            }
+
+            .price-badge {
+                min-width: 40px;
+                padding: 3px 6px;
+            }
+
+            .price-badge span.amount {
+                font-size: 0.85rem;
+            }
+
+            .item-dots {
+                margin: 0 6px 4px 6px;
+                min-width: 10px;
+            }
+
+            .category-title {
+                font-size: 1.4rem;
+            }
+
+            .logo-text {
+                font-size: 2.2rem;
+            }
+
+            .header-section {
+                min-height: 320px;
+                padding-top: 40px;
+            }
+
+            .logo-image {
+                width: 200px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .category-pills {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                overflow: visible;
+                gap: 10px;
+            }
+
+            .category-btn {
+                min-width: 0;
+                width: 100%;
+            }
+        }
+
+        /* === Accessibility: Reduced Motion === */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* === Skip to Content (a11y) === */
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--navy-teal);
+            color: var(--gold);
+            padding: 10px 24px;
+            border-radius: 0 0 10px 10px;
+            font-weight: 700;
+            z-index: 9999;
+            text-decoration: none;
+            transition: top 0.2s;
+        }
+
+        .skip-link:focus {
+            top: 0;
         }
     </style>
 </head>
+
 <body>
+    <!-- Skip to Content (Accessibility) -->
+    <a href="#menuContent" class="skip-link">تخطي إلى المنيو</a>
 
     <!-- HERO SECTION -->
     <header class="header-section">
         <div class="stars"></div> <!-- Twinkling Background -->
-        
+
         <!-- Decorations -->
-        <div class="ramadan-decorations">
+        <div class="eid-decorations">
             <div class="hanging-item decor-1 swing-slow">
-                <div class="string" style="height: 100%"></div>
-                <i class="fas fa-kaaba"></i>
-            </div>
-            <div class="hanging-item decor-2 swing-fast">
                 <div class="string" style="height: 100%"></div>
                 <i class="fas fa-star"></i>
             </div>
+            <div class="hanging-item decor-2 swing-fast">
+                <div class="string" style="height: 100%"></div>
+                <i class="fas fa-gift"></i>
+            </div>
             <div class="hanging-item decor-3 swing-slow">
                 <div class="string" style="height: 100%"></div>
-                <i class="fas fa-mosque"></i>
+                <i class="fas fa-moon"></i>
             </div>
             <div class="hanging-item decor-4 swing-med">
                 <div class="string" style="height: 100%"></div>
-                <i class="fas fa-moon"></i>
+                <i class="fas fa-music"></i>
             </div>
         </div>
 
@@ -525,50 +1009,65 @@
             <img src="assets/images/1.png" alt="Sofiano Logo" class="logo-image" width="280" height="280">
             <h1 class="logo-text">SOFIANO</h1>
             <p class="logo-subtitle">Take Away Menu | قائمة طلبات خارجية</p>
-            
-            <div class="ramadan-badge">رمضان كريم</div>
-            <div class="ramadan-text-en">RAMADAN KAREEM</div>
+
+            <div class="eid-badge">عيد سعيد</div>
+            <div class="eid-text-en">EID MUBARAK</div>
         </div>
 
         <!-- Shape Divider Bottom -->
         <div class="custom-shape-divider-bottom">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
             </svg>
         </div>
     </header>
 
     <!-- NAV -->
     <nav class="category-nav">
+        <div class="category-head">
+            <h3>اختار صنفك</h3>
+            <span>Select Category</span>
+        </div>
         <div class="category-pills" id="categoryPills"></div>
     </nav>
 
     <!-- MENU -->
     <main class="menu-container">
+        <section class="menu-intro">
+            <h2>منيو سوفيانو تيك أواي</h2>
+            <p>نفس الجودة والطعم بأسعار تيك أواي مميزة ✨</p>
+        </section>
         <div id="menuContent"></div>
     </main>
-    
+
     <!-- SCROLL TOP BTN -->
-    <div class="scroll-top-btn" id="scrollTopBtn">
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="العودة لأعلى الصفحة" title="العودة لأعلى">
         <i class="fas fa-chevron-up"></i>
-    </div>
+    </button>
 
     <!-- FOOTER -->
     <footer class="footer-section">
         <h3 class="footer-title">Sofiano Cafe</h3>
         <p class="footer-text">
-            شارع 16 الملك - بجوار بيت الجمله<br>
-            منطقة الفلكي - شارع الملك<br>
-            <a href="tel:01070704509" style="color: var(--gold); text-decoration: none; font-weight:700;">01070704509 📞</a>
+            الفلكي - شارع 16 الملك - بجوار بيت الجملة<br>
+            <a href="tel:0333300930">📞 03 / 3300930</a><br>
+            <a href="tel:01070704509">📱 01070704509</a><br>
+            <a href="tel:01096825748">📱 01096825748</a>
         </p>
-        
+        <p class="footer-events">
+            🎂 حجوزات • أعياد ميلاد • مناسبات عائلية
+        </p>
+
         <div class="social-icons">
-            <a href="tel:01070704509" target="_blank" class="social-icon"><i class="fas fa-phone"></i></a>
-            <a href="https://wa.me/201070704509" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="tel:01070704509" class="social-icon" aria-label="اتصل بنا"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/201070704509" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon" aria-label="موقعنا على الخريطة"><i class="fas fa-map-marker-alt"></i></a>
         </div>
-        
-        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.6;">&copy; 2025 Sofiano Cafe. Ramadan Kareem.</p>
+
+        <p class="footer-copyright">&copy; 2025 Sofiano Cafe. Eid Mubarak.</p>
     </footer>
 
     <!-- JS -->
@@ -581,77 +1080,207 @@
                 { id: 'coffee', name: 'COFFEE', name_ar: 'القهوة', icon: 'fa-mug-hot' },
                 { id: 'hot-drinks', name: 'HOT DRINKS', name_ar: 'المشروبات الساخنة', icon: 'fa-fire-flame-curved' },
                 { id: 'mocktail', name: 'MOCKTAIL', name_ar: 'الموكتيل', icon: 'fa-martini-glass' },
-                { id: 'ice-coffee', name: 'ICE COFFEE', name_ar: 'القهوة المثلجة', icon: 'fa-snowflake' }
+                { id: 'ice-coffee', name: 'ICE COFFEE', name_ar: 'القهوة المثلجة', icon: 'fa-snowflake' },
+                { id: 'frappe', name: 'FRAPPE', name_ar: 'فرابيه', icon: 'fa-blender' },
+                { id: 'milkshake', name: 'MILKSHAKE', name_ar: 'ميلك شيك', icon: 'fa-ice-cream' },
+                { id: 'smoothie', name: 'SMOOTHIE', name_ar: 'سموثي', icon: 'fa-droplet' },
+                { id: 'fresh-juice', name: 'JUICE', name_ar: 'عصائر', icon: 'fa-lemon' },
+                { id: 'cocktail', name: 'COCKTAIL', name_ar: 'كوكتيل', icon: 'fa-wine-glass' },
+                { id: 'soft-drink', name: 'SOFT DRINK', name_ar: 'مشروبات غازية', icon: 'fa-bottle-water' },
+                { id: 'dessert', name: 'DESSERT', name_ar: 'حلويات', icon: 'fa-cookie-bite' },
+                { id: 'extra', name: 'EXTRA', name_ar: 'إضافات', icon: 'fa-plus' }
             ],
             items: {
                 'special-coffee': [
-                    { name_en: 'Turkish Coffee', name_ar: 'قهوه تركي', price_s: 20, price_d: 25 },
-                    { name_en: 'Mahoug Coffee', name_ar: 'قهوه محوج', price_s: 25, price_d: 30 },
-                    { name_en: 'Dark Coffee', name_ar: 'قهوه غامق', price_s: 25, price_d: 30 },
-                    { name_en: 'Sofiano Coffee', name_ar: 'قهوه سفيانو', price_s: 25, price_d: 30 },
-                    { name_en: 'Special Coffee', name_ar: 'قهوه سبشيال', price_s: 25, price_d: 30 },
-                    { name_en: 'Habashi Coffee', name_ar: 'قهوه حبشي', price_s: 25, price_d: 30 },
-                    { name_en: 'Brazilian Coffee', name_ar: 'قهوه برازيلي', price_s: 30, price_d: 35 },
-                    { name_en: 'Indian Coffee', name_ar: 'قهوه هندي', price_s: 25, price_d: 30 },
-                    { name_en: 'Ameed Coffee', name_ar: 'قهوه عميد', price_s: 30, price_d: 35 },
-                    { name_en: 'Brazilian Dark', name_ar: 'برازيلي غامق', price_s: 30, price_d: 35 },
-                    { name_en: 'Golden Time', name_ar: 'جولدن تايم', price_s: 35, price_d: 40 },
-                    { name_en: 'Colombian', name_ar: 'كولومبي', price_s: 35, price_d: 40 },
-                    { name_en: 'Colombian Dark', name_ar: 'كولومبي غامق', price_s: 40, price_d: 45 },
-                    { name_en: 'Yemeni Coffee', name_ar: 'قهوه يمني', price_s: 45, price_d: 50 },
-                    { name_en: 'Groom Coffee', name_ar: 'قهوه العريس', price_s: 45, price_d: 50 },
-                    { name_en: 'Milk Coffee', name_ar: 'قهوه حليب', price_s: null, price_d: 30 },
-                    { name_en: 'Flavor Coffee', name_ar: 'قهوه فليفر', price_s: null, price_d: 35 }
+                    { name_en: 'Turkish Coffee', name_ar: 'قهوة تركي', price_s: 25, price_d: 30 },
+                    { name_en: 'Mahjoug Coffee', name_ar: 'قهوة محجوج', price_s: 30, price_d: 35 },
+                    { name_en: 'Dark Coffee', name_ar: 'قهوة غامق', price_s: 30, price_d: 35 },
+                    { name_en: 'Sofiano Coffee', name_ar: 'قهوة سفيانو', price_s: 30, price_d: 35 },
+                    { name_en: 'Special Coffee', name_ar: 'قهوة سبشيال', price_s: 30, price_d: 35 },
+                    { name_en: 'Habashi Coffee', name_ar: 'قهوة حبشي', price_s: 30, price_d: 35 },
+                    { name_en: 'Brazilian Coffee', name_ar: 'قهوة برازيلي', price_s: 30, price_d: 35 },
+                    { name_en: 'Indian Coffee', name_ar: 'قهوة هندي', price_s: 30, price_d: 35 },
+                    { name_en: 'Ameed Coffee', name_ar: 'قهوة عميد', price_s: 35, price_d: 40 },
+                    { name_en: 'Brazilian Dark', name_ar: 'قهوة برازيلي غامق', price_s: 40, price_d: 45 },
+                    { name_en: 'Black Bull Coffee', name_ar: 'قهوة بلاك بول', price_s: 40, price_d: 45 },
+                    { name_en: 'Colombian Coffee', name_ar: 'قهوة كولمبي', price_s: 40, price_d: 45 },
+                    { name_en: 'Colombian Dark', name_ar: 'قهوة كولمبي غامق', price_s: 45, price_d: 50 },
+                    { name_en: 'Yemeni Coffee', name_ar: 'قهوة يمني', price_s: 50, price_d: 55 },
+                    { name_en: 'Groom Coffee', name_ar: 'قهوة العريس', price_s: 50, price_d: 55 },
+                    { name_en: 'French Coffee', name_ar: 'قهوة فرنساوي', price_s: 40, price_d: null },
+                    { name_en: 'Flavor Coffee', name_ar: 'قهوة فليفر', price_s: 45, price_d: null, description: 'بندق - فانيليا - شيكولاتة - كارميل - مانجو - توت - شيشه تفاح - فراولة' }
                 ],
                 'coffee': [
-                    { name_en: 'Espresso', name_ar: 'اسبريسو', price_s: 30, price_d: 40 },
-                    { name_en: 'Americano', name_ar: 'امريكانو', price_s: 40, price_d: null },
-                    { name_en: 'Macchiato', name_ar: 'ميكاتو', price_s: 40, price_d: null },
-                    { name_en: 'Latte', name_ar: 'لاتيه', price_s: 45, price_d: null },
-                    { name_en: 'Cortado', name_ar: 'كورتادو', price_s: 45, price_d: null },
-                    { name_en: 'Caramel Macchiato', name_ar: 'كاراميل ميكاتو', price_s: 45, price_d: null },
-                    { name_en: 'Espresso Affogato', name_ar: 'اسبريسو افوجاتو', price_s: 50, price_d: null },
-                    { name_en: 'Cappuccino', name_ar: 'كابتشينو', price_s: 50, price_d: null },
-                    { name_en: 'Flat White', name_ar: 'فلات وايت', price_s: 50, price_d: null },
-                    { name_en: 'Bonbon Coffee', name_ar: 'بنبون كوفي', price_s: 60, price_d: null },
-                    { name_en: 'Mocha', name_ar: 'موكا', price_s: 60, price_d: null },
-                    { name_en: 'Nutella Latte', name_ar: 'لاتيه نوتيلا', price_s: 60, price_d: null },
-                    { name_en: 'Spanish Latte', name_ar: 'سبانش لاتيه', price_s: 60, price_d: null }
+                    { name_en: 'Espresso', name_ar: 'اسبريسو', price_s: 35, price_d: 45 },
+                    { name_en: 'Americano', name_ar: 'أمريكانو', price_s: 50, price_d: null },
+                    { name_en: 'Macchiato', name_ar: 'ميكاتو', price_s: 50, price_d: null },
+                    { name_en: 'American Coffee', name_ar: 'أمريكان كوفي', price_s: 60, price_d: null },
+                    { name_en: 'Latte', name_ar: 'لاتيه', price_s: 50, price_d: null },
+                    { name_en: 'Cortado', name_ar: 'كورتاتو', price_s: 60, price_d: null },
+                    { name_en: 'Caramel Macchiato', name_ar: 'كارميل ميكاتو', price_s: 65, price_d: null },
+                    { name_en: 'Espresso Affogato', name_ar: 'سبريسو أفوجاتو', price_s: null, price_d: 60 },
+                    { name_en: 'Cappuccino', name_ar: 'كابتشينو', price_s: null, price_d: 65 },
+                    { name_en: 'Flat White', name_ar: 'فلات وايت', price_s: null, price_d: 60 },
+                    { name_en: 'Bonbon Coffee', name_ar: 'بنبون كوفي', price_s: null, price_d: 80 },
+                    { name_en: 'Mocha', name_ar: 'موكا', price_s: null, price_d: 65 },
+                    { name_en: 'Latte Nutella', name_ar: 'لاتيه نوتيلا', price_s: null, price_d: 65 },
+                    { name_en: 'Spanish Latte', name_ar: 'سبانش لاتيه', price_s: null, price_d: 70 },
+                    { name_en: 'Choco Chips', name_ar: 'شيكوشيبس', price_s: null, price_d: 75 },
+                    { name_en: 'Espresso Coffee Pan', name_ar: 'اسبريسو كوفي بان', price_s: null, price_d: 70 },
+                    { name_en: 'Lotus Coffee', name_ar: 'لوتس كوفي', price_s: null, price_d: 65 },
+                    { name_en: 'Piccolo', name_ar: 'بيكولو', price_s: null, price_d: 70 },
+                    { name_en: 'Pistachio Coffee', name_ar: 'بيستاشيو كوفي', price_s: null, price_d: 90 },
+                    { name_en: 'Caramel Coffee', name_ar: 'كراميل كوفي', price_s: null, price_d: 65 },
+                    { name_en: 'Nutella Coffee', name_ar: 'نوتيلا كوفي', price_s: null, price_d: 70 },
+                    { name_en: 'Colont', name_ar: 'كولونت', price_s: null, price_d: 75 },
+                    { name_en: 'After White', name_ar: 'أفتر وايت', price_s: null, price_d: 70 }
                 ],
                 'hot-drinks': [
-                    { name_en: 'Tea', name_ar: 'شاي', price_s: 10, price_d: null },
-                    { name_en: 'Green Tea', name_ar: 'شاي اخضر', price_s: 15, price_d: null },
-                    { name_en: 'Flavor Tea', name_ar: 'شاي فليفر', price_s: 20, price_d: null },
-                    { name_en: 'Milk Tea', name_ar: 'شاي بلبن', price_s: 20, price_d: null },
-                    { name_en: 'Herbs', name_ar: 'اعشاب', price_s: 10, price_d: null },
-                    { name_en: 'Coffee Mix', name_ar: 'كوفي ميكس', price_s: 15, price_d: null },
-                    { name_en: 'Nescafe', name_ar: 'نسكافيه', price_s: 30, price_d: null },
-                    { name_en: 'Hot Cider', name_ar: 'هوت سيدر', price_s: 30, price_d: null },
-                    { name_en: 'Hot Chocolate', name_ar: 'هوت شوكليت', price_s: 30, price_d: null },
-                    { name_en: 'Sahlab', name_ar: 'سحلب', price_s: 30, price_d: null },
-                    { name_en: 'Sahlab Nuts', name_ar: 'سحلب مكسرات', price_s: 40, price_d: null },
-                    { name_en: 'Sahlab Flavor', name_ar: 'سحلب فليفر', price_s: 40, price_d: null }
+                    { name_en: 'Tea', name_ar: 'شاي', price_s: 15, price_d: null },
+                    { name_en: 'Green Tea', name_ar: 'شاي أخضر', price_s: 20, price_d: null },
+                    { name_en: 'Tea Flavor', name_ar: 'شاي فليفر', price_s: 25, price_d: null },
+                    { name_en: 'Milk Tea', name_ar: 'شاي بلبن', price_s: 25, price_d: null },
+                    { name_en: 'Karak Tea', name_ar: 'شاي كرك', price_s: 35, price_d: null },
+                    { name_en: 'Herbs', name_ar: 'أعشاب', price_s: 15, price_d: null, description: 'كركديه - نعناع - ينسون - زنجبيل - تيلبو' },
+                    { name_en: 'Herbs Cocktail', name_ar: 'كوكتيل أعشاب', price_s: 35, price_d: null },
+                    { name_en: 'Nescafe Classic', name_ar: 'نسكافية كلاسيك', price_s: 40, price_d: null },
+                    { name_en: 'Nescafe Gold', name_ar: 'نسكافية جولد', price_s: 40, price_d: null },
+                    { name_en: 'Hot Cider', name_ar: 'هوت سيدر', price_s: 40, price_d: null },
+                    { name_en: 'Hot Chocolate', name_ar: 'هوت شوكليت', price_s: 40, price_d: null },
+                    { name_en: 'Sahlab Classic', name_ar: 'سحلب كلاسيك', price_s: 45, price_d: null },
+                    { name_en: 'Sahlab Nuts', name_ar: 'سحلب مكسرات', price_s: 55, price_d: null },
+                    { name_en: 'Sahlab Flavor', name_ar: 'سحلب فليفر', price_s: 60, price_d: null },
+                    { name_en: 'Sahlab Fruits', name_ar: 'سحلب فواكه', price_s: 65, price_d: null },
+                    { name_en: 'Sahlab Hazelnut', name_ar: 'سحلب بندق', price_s: 75, price_d: null },
+                    { name_en: 'Sahlab Pistachio', name_ar: 'سحلب بيستاشيو', price_s: 80, price_d: null },
+                    { name_en: 'Vitamin C', name_ar: 'فيتامين سي', price_s: 35, price_d: null },
+                    { name_en: 'Hot Chocolate Oreo', name_ar: 'هوت شوكليت أوريو', price_s: 55, price_d: null },
+                    { name_en: 'Hot Chocolate Lotus', name_ar: 'هوت شوكليت لوتس', price_s: 55, price_d: null },
+                    { name_en: 'Hot Chocolate Marshmallow', name_ar: 'هوت شوكليت مارشيمليو', price_s: 65, price_d: null }
                 ],
                 'mocktail': [
-                    { name_en: 'Classic Mojito', name_ar: 'كلاسيك موهيتو', price_s: 45, price_d: null, description: 'ليمون - نعناع - سبرايت - فراولة' },
-                    { name_en: 'Flavor Mojito', name_ar: 'موهيتو فليتر', price_s: 50, price_d: null, description: 'ليمون - نعناع - سبرايت - سولوبيا' },
-                    { name_en: 'Sunshine', name_ar: 'صن شاين', price_s: 45, price_d: null, description: 'ليمون - برتقال - سبرايت - سولوبيا' },
-                    { name_en: 'Green Mint', name_ar: 'جرين مينت', price_s: 45, price_d: null, description: 'ليمون - نعناع - سبرايت - سينا' },
-                    { name_en: 'Hawaii Mojito', name_ar: 'هواي موهيتو', price_s: 55, price_d: null, description: 'ليمون - نعناع - سبرايت - مانجو - فراولة - جوافة - سينا' },
-                    { name_en: 'Hammer Head', name_ar: 'هامر هيد', price_s: 90, price_d: null, description: 'ليمون - نعناع - رمان - فراولة - سبرايت - ريبوليا' },
-                    { name_en: 'Sofiano Oxygen Mix', name_ar: 'سفيانو اوكسيجن ميكس', price_s: 110, price_d: null, description: 'ليمون - نعناع - سبرايت - فراولة - ريبوليا' }
+                    { name_en: 'Classic Mojito', name_ar: 'كلاسيك موهيتو', price_s: 65, price_d: null, description: 'سيرب موهيتو - نعناع - سفن - ليمون' },
+                    { name_en: 'Flavor Mojito', name_ar: 'موهيتو فليفر', price_s: 65, price_d: null, description: 'سيرب موهيتو - نعناع - توبينج - سفن - ليمون' },
+                    { name_en: 'Sun Shine', name_ar: 'صن شاين', price_s: 60, price_d: null, description: 'سيرب ومان - برتقال - سفن' },
+                    { name_en: 'Green Mint', name_ar: 'جرين مينت', price_s: 75, price_d: null, description: 'سيرب نعناع - سفن' },
+                    { name_en: 'Hawaii Mojito', name_ar: 'هواي موهيتو', price_s: 75, price_d: null, description: 'توبينج أناناس - بلوكراساو - عصير أناناس - سفن' },
+                    { name_en: 'Hammer Head', name_ar: 'هامر هيد', price_s: 110, price_d: null, description: 'دابل سبريسو - ريدبول' },
+                    { name_en: 'Sofiano Explosion', name_ar: 'سفيانو أكسلوجين ميكس', price_s: 130, price_d: null, description: 'قطع بطيخ - قطع فراوله - راسبيري - ريدبول' },
+                    { name_en: 'Jamaica', name_ar: 'جامايكا', price_s: 85, price_d: null },
+                    { name_en: 'Cherry Cola', name_ar: 'شيري كولا', price_s: 70, price_d: null },
+                    { name_en: 'Red Blood', name_ar: 'ريد بلدي هير', price_s: 80, price_d: null },
+                    { name_en: 'Mountain View', name_ar: 'مواتنتج فيو', price_s: 85, price_d: null }
                 ],
                 'ice-coffee': [
-                    { name_en: 'Ice Americano', name_ar: 'ايس امريكانو', price_s: 40, price_d: null },
-                    { name_en: 'Lotus Latte', name_ar: 'لوتس لاتيه', price_s: 45, price_d: null },
-                    { name_en: 'Ice Latte', name_ar: 'ايس لاتيه', price_s: 45, price_d: null },
-                    { name_en: 'Ice Mocha', name_ar: 'ايس موكا', price_s: 50, price_d: null },
-                    { name_en: 'Ice Macchiato', name_ar: 'ايس مكياتو', price_s: 50, price_d: null },
-                    { name_en: 'Ice Cappuccino', name_ar: 'ايس كابتشينو', price_s: 50, price_d: null },
-                    { name_en: 'Ice Caramel Macchiato', name_ar: 'ايس كاراميل مكياته', price_s: 50, price_d: null },
-                    { name_en: 'Ice Mocha', name_ar: 'ايس موكا', price_s: 55, price_d: null },
-                    { name_en: 'Ice White Mocha', name_ar: 'ايس وايت موكا', price_s: 55, price_d: null },
-                    { name_en: 'Ice Spanish Latte', name_ar: 'ايس سبانش لاتيه', price_s: 70, price_d: null }
+                    { name_en: 'Ice Americano', name_ar: 'أيس أمريكانو', price_s: 55, price_d: null },
+                    { name_en: 'Ice Latte', name_ar: 'أيس لاتيه', price_s: 60, price_d: null },
+                    { name_en: 'Lotus Latte', name_ar: 'لوتس لاتيه', price_s: 65, price_d: null },
+                    { name_en: 'Ice Macchiato', name_ar: 'أيس ميكاتو', price_s: 60, price_d: null },
+                    { name_en: 'Ice Cappuccino', name_ar: 'أيس كابتشينو', price_s: 60, price_d: null },
+                    { name_en: 'Ice Caramel Macchiato', name_ar: 'أيس كراميل ميكاتو', price_s: null, price_d: null },
+                    { name_en: 'Ice Mocha', name_ar: 'أيس موكا', price_s: 70, price_d: null },
+                    { name_en: 'Ice White Mocha', name_ar: 'أيس وايت موكا', price_s: 75, price_d: null },
+                    { name_en: 'Ice Spanish Latte', name_ar: 'أيس سبانش لاتيه', price_s: 85, price_d: null },
+                    { name_en: 'Ice Dark Sky Latte', name_ar: 'أيس دارلوسكاي لاتيه', price_s: 75, price_d: null },
+                    { name_en: 'Blue Ice Latte', name_ar: 'بلو أيس لاتيه', price_s: 75, price_d: null },
+                    { name_en: 'Ice Chicken Espreliw', name_ar: 'أيس تشيكن اسبرليو', price_s: 85, price_d: null },
+                    { name_en: 'Ice Chicken Avocado', name_ar: 'أيس تشيكن أفوكاتو كوفي', price_s: 85, price_d: null },
+                    { name_en: 'Matcha', name_ar: 'ماتشا', price_s: 120, price_d: null }
+                ],
+                'frappe': [
+                    { name_en: 'Frappe Coffee', name_ar: 'فرابيه كوفي', price_s: 75, price_d: null },
+                    { name_en: 'Frappe Double Coffee', name_ar: 'فرابيه دابل كوفي', price_s: 80, price_d: null },
+                    { name_en: 'Nutella Frappe', name_ar: 'نوتيلا فرابيه', price_s: 85, price_d: null },
+                    { name_en: 'Chocolate Frappe', name_ar: 'شوكليت فرابيه', price_s: 85, price_d: null },
+                    { name_en: 'Caramel Frappe', name_ar: 'كراميل فرابيه', price_s: 85, price_d: null },
+                    { name_en: 'Pistachio Frappe', name_ar: 'بستاشيو فرابيه', price_s: 95, price_d: null },
+                    { name_en: 'Sofiano Frappe', name_ar: 'سفيانو فرابيه', price_s: 125, price_d: null }
+                ],
+                'milkshake': [
+                    { name_en: 'Milk Vanilla', name_ar: 'ميلك فانيلتيا', price_s: 70, price_d: null },
+                    { name_en: 'Milk Chocolate', name_ar: 'ميلك شوكليت', price_s: 75, price_d: null },
+                    { name_en: 'Milk Caramel', name_ar: 'ميلك كراميل', price_s: 80, price_d: null },
+                    { name_en: 'Milk Strawberry', name_ar: 'ميلك فراوله', price_s: 80, price_d: null },
+                    { name_en: 'Milk Blueberry', name_ar: 'ميلك بلوبيري', price_s: 80, price_d: null },
+                    { name_en: 'Milk Mango', name_ar: 'ميلك مانجو', price_s: 85, price_d: null },
+                    { name_en: 'Milk Nutella', name_ar: 'ميلك نوتيلا', price_s: 80, price_d: null },
+                    { name_en: 'Milk Oreo', name_ar: 'ميلك أوريو', price_s: 80, price_d: null },
+                    { name_en: 'Milk Digestive Caramel', name_ar: 'ميلك داي جستيف كراميل', price_s: 100, price_d: null },
+                    { name_en: 'Milk Mix Berry', name_ar: 'ميلك ميكس بيري', price_s: 90, price_d: null },
+                    { name_en: 'Milk Over Dose', name_ar: 'ميلك اوفر دوز', price_s: 140, price_d: null },
+                    { name_en: 'Milk Lotus', name_ar: 'ميلك لوتس', price_s: 90, price_d: null }
+                ],
+                'smoothie': [
+                    { name_en: 'Ice Chocolate', name_ar: 'أيس شوكليت', price_s: 55, price_d: null },
+                    { name_en: 'Smoothie Strawberry', name_ar: 'سموزي فراوله', price_s: 60, price_d: null },
+                    { name_en: 'Smoothie Watermelon', name_ar: 'سموزي بطيخ', price_s: 60, price_d: null },
+                    { name_en: 'Smoothie Passion Fruit', name_ar: 'سموزي باشون فروت', price_s: 60, price_d: null },
+                    { name_en: 'Smoothie Fresh', name_ar: 'سموزي فريش', price_s: 60, price_d: null },
+                    { name_en: 'Smoothie Mango', name_ar: 'سموزي مانجو', price_s: 65, price_d: null },
+                    { name_en: 'Smoothie Tropical Mix', name_ar: 'سموزي ترويبكال ميكس', price_s: 70, price_d: null },
+                    { name_en: 'Smoothie Kiwi', name_ar: 'سموزي كيوي', price_s: 80, price_d: null },
+                    { name_en: 'Smoothie Torpedo', name_ar: 'سموزي توربيدو', price_s: 70, price_d: null },
+                    { name_en: 'Smoothie Blue Banana', name_ar: 'سموزي بلوبنانا', price_s: 70, price_d: null }
+                ],
+                'fresh-juice': [
+                    { name_en: 'Mango', name_ar: 'مانجو', price_s: 55, price_d: null },
+                    { name_en: 'Guava', name_ar: 'جوافة', price_s: 40, price_d: null },
+                    { name_en: 'Guava Milk', name_ar: 'جوافة حليب', price_s: 45, price_d: null },
+                    { name_en: 'Strawberry', name_ar: 'فراوله', price_s: 50, price_d: null },
+                    { name_en: 'Strawberry Milk', name_ar: 'فراوله حليب', price_s: 65, price_d: null },
+                    { name_en: 'Watermelon', name_ar: 'بطيخ', price_s: 55, price_d: null },
+                    { name_en: 'Lemon', name_ar: 'ليمون', price_s: 40, price_d: null },
+                    { name_en: 'Lemon Mint', name_ar: 'ليمون نعناع', price_s: 50, price_d: null },
+                    { name_en: 'Cantaloupe', name_ar: 'كانتلوب', price_s: 45, price_d: null },
+                    { name_en: 'Dates Milk', name_ar: 'بلح حليب', price_s: 50, price_d: null },
+                    { name_en: 'Dates Nuts', name_ar: 'بلح مكسرات', price_s: 60, price_d: null },
+                    { name_en: 'Banana Milk', name_ar: 'موز حليب', price_s: 65, price_d: null },
+                    { name_en: 'Kiwi', name_ar: 'كيوي', price_s: 85, price_d: null },
+                    { name_en: 'Avocado', name_ar: 'أفوكادو', price_s: 95, price_d: null },
+                    { name_en: 'Avocado Nuts', name_ar: 'أفوكادو مكسرات', price_s: 125, price_d: null }
+                ],
+                'cocktail': [
+                    { name_en: 'Pinacolada', name_ar: 'بيناكولادا', price_s: 70, price_d: null, description: 'أناناس - جوافه - لبن' },
+                    { name_en: 'Yogurt Honey', name_ar: 'يويورت هاني', price_s: 50, price_d: null },
+                    { name_en: 'Beat the Heat', name_ar: 'بيت ذا هيت', price_s: 70, price_d: null, description: 'بطيخ - فراوله - ليمون' },
+                    { name_en: 'Palarma', name_ar: 'بالارما', price_s: 70, price_d: null, description: 'جوافه - نعناع - ليمون - سفن' },
+                    { name_en: 'Energy Power', name_ar: 'إنرجي باور', price_s: 80, price_d: null, description: 'بلح - موز' },
+                    { name_en: 'Florida', name_ar: 'فلوريدا', price_s: 75, price_d: null, description: 'مانجو - جوافه - فراوله' },
+                    { name_en: 'Kiwi Strw', name_ar: 'كيوي ستيرو', price_s: 85, price_d: null, description: 'فراوله - كيوي' },
+                    { name_en: 'Yogurt Mango', name_ar: 'يوجرت مانجو', price_s: 75, price_d: null },
+                    { name_en: 'New Day', name_ar: 'نيو داي', price_s: 75, price_d: null, description: 'مانجو - بلوبيري - نعناع' },
+                    { name_en: 'Sofiano Special Cocktail', name_ar: 'سفيانو سبيشيال كوكتيل', price_s: 115, price_d: null, description: 'مانجو - فوخ - أيس كريم فانيليا' },
+                    { name_en: 'Fruit Salad', name_ar: 'فروت سالت', price_s: 75, price_d: null }
+                ],
+                'soft-drink': [
+                    { name_en: 'Water', name_ar: 'مياه', price_s: 10, price_d: null },
+                    { name_en: 'Pepsi', name_ar: 'بيبسي', price_s: 25, price_d: null },
+                    { name_en: '7UP', name_ar: 'سفن', price_s: 25, price_d: null },
+                    { name_en: 'Schweppes', name_ar: 'شويبس', price_s: 30, price_d: null },
+                    { name_en: 'Birell', name_ar: 'بريل', price_s: 30, price_d: null },
+                    { name_en: 'Fayrouz', name_ar: 'فيروز', price_s: 30, price_d: null },
+                    { name_en: 'Red Bull', name_ar: 'ريد بول', price_s: 70, price_d: null }
+                ],
+                'dessert': [
+                    { name_en: 'Patie Cheese', name_ar: 'باتيه جبنة', price_s: 40, price_d: null },
+                    { name_en: 'Croissant', name_ar: 'كرواسون', price_s: 40, price_d: null },
+                    { name_en: 'Croissant Cheese', name_ar: 'كرواسون جبنة', price_s: 45, price_d: null },
+                    { name_en: 'Brownies Cake', name_ar: 'براونيز كيك', price_s: 45, price_d: null },
+                    { name_en: 'San Sebastian Cheese Cake', name_ar: 'تشيز كيك سان سيبستان', price_s: 45, price_d: null },
+                    { name_en: 'American Cheese Cake', name_ar: 'تشيز كيك أمريكان', price_s: 45, price_d: null },
+                    { name_en: 'Molten Cake', name_ar: 'مولتن كيك', price_s: 85, price_d: null },
+                    { name_en: 'Madness', name_ar: 'مادنس', price_s: 65, price_d: null },
+                    { name_en: 'Fudge', name_ar: 'فادج', price_s: 60, price_d: null },
+                    { name_en: 'Red Velvet', name_ar: 'ريد فيلفت', price_s: 55, price_d: null },
+                    { name_en: 'Om Ali', name_ar: 'أم علي', price_s: 60, price_d: null }
+                ],
+                'extra': [
+                    { name_en: 'Ice Cream', name_ar: 'أيس كريم', price_s: 25, price_d: null },
+                    { name_en: 'Pistachio Sauce', name_ar: 'صوص بيستاشيو', price_s: 30, price_d: null },
+                    { name_en: 'Cheddar Cheese', name_ar: 'جبنة شيدر', price_s: 25, price_d: null },
+                    { name_en: 'Sauce', name_ar: 'صوص', price_s: 15, price_d: null },
+                    { name_en: 'Milk', name_ar: 'حليب', price_s: 25, price_d: null },
+                    { name_en: 'Nuts', name_ar: 'مكسرات', price_s: 30, price_d: null }
                 ]
             }
         };
@@ -664,102 +1293,129 @@
             renderCategoryButtons();
             renderMenuContent();
             setupScrollTop();
-            
+
             // Set first button active
             const firstBtn = document.querySelector('.category-btn');
-            if(firstBtn) firstBtn.classList.add('active');
+            if (firstBtn) firstBtn.classList.add('active');
         });
 
         function renderCategoryButtons() {
             const container = document.getElementById('categoryPills');
             const fragment = document.createDocumentFragment();
-            
+
             menuData.categories.forEach(category => {
                 const btn = document.createElement('button');
                 btn.className = 'category-btn';
                 btn.dataset.id = category.id;
-                btn.innerHTML = `<i class="fa-solid ${category.icon}"></i> ${category.name}`;
+
+                // Count items for this category
+                let count = '';
+                if (category.id === 'all') {
+                    const total = Object.values(menuData.items).reduce((sum, arr) => sum + arr.length, 0);
+                    count = `<span class="item-count">${total} صنف</span>`;
+                } else if (menuData.items[category.id]) {
+                    count = `<span class="item-count">${menuData.items[category.id].length} صنف</span>`;
+                }
+
+                btn.innerHTML = `
+                    <span class="icon-badge"><i class="fa-solid ${category.icon}"></i></span>
+                    <span class="labels">
+                        <span class="label-ar">${category.name_ar}</span>
+                        <span class="label-en">${category.name}</span>
+                        ${count}
+                    </span>
+                `;
                 btn.addEventListener('click', () => switchCategory(category.id, btn));
                 fragment.appendChild(btn);
             });
-            
+
             container.innerHTML = '';
             container.appendChild(fragment);
         }
 
         function switchCategory(id, btn) {
             currentCategory = id;
-            
+
             // Update UI
             document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-            if(btn) btn.classList.add('active');
-            
+            if (btn) btn.classList.add('active');
+            centerActiveCategory(btn);
+
             // Optimized render
             renderMenuContent();
+
+            // Scroll to menu content smoothly
+            const menuContainer = document.querySelector('.menu-container');
+            if (window.scrollY > menuContainer.offsetTop - 50) {
+                window.scrollTo({ top: menuContainer.offsetTop - 80, behavior: 'smooth' });
+            }
+        }
+
+        function centerActiveCategory(btn) {
+            if (!btn) return;
+            btn.scrollIntoView({
+                behavior: 'smooth',
+                inline: 'center',
+                block: 'nearest'
+            });
         }
 
         function renderMenuContent() {
             const container = document.getElementById('menuContent');
-            
-            // Using a simple loading placeholder prevents jank
+
             container.innerHTML = '<div style="height:200px"></div>';
-            
-            // requestAnimationFrame pushes the heavy DOM work to next frame to allow button tap feedback
+
             requestAnimationFrame(() => {
                 let html = '';
-                
-                // Determine what to show
-                const catsToShow = currentCategory === 'all' 
-                    ? menuData.categories.filter(c => c.id !== 'all') 
+
+                const catsToShow = currentCategory === 'all'
+                    ? menuData.categories.filter(c => c.id !== 'all')
                     : menuData.categories.filter(c => c.id === currentCategory);
 
                 catsToShow.forEach(cat => {
                     const items = menuData.items[cat.id];
-                    if(!items) return;
+                    if (!items) return;
 
-                    // Build string first (fastest method)
-                    let itemsHtml = '';
-                    items.forEach(item => {
-                        const priceS = item.price_s !== null ? item.price_s : '';
-                        const priceD = item.price_d !== null ? item.price_d : '';
-                        const naClassS = item.price_s === null ? 'price-na' : '';
-                        const naClassD = item.price_d === null ? 'price-na' : '';
-                        const symbolS = item.price_s === null ? '-' : '';
-                        const symbolD = item.price_d === null ? '-' : '';
+                    let itemsHtml = items.map(item => {
+                        const priceS = item.price_s !== null
+                            ? `<div class="price-badge"><span class="size">S</span><span class="amount">${item.price_s}</span><span class="currency">ج.م</span></div>`
+                            : '';
+                        const priceD = item.price_d !== null
+                            ? `<div class="price-badge"><span class="size">D</span><span class="amount">${item.price_d}</span><span class="currency">ج.م</span></div>`
+                            : '';
 
-                        itemsHtml += `
+                        return `
                             <div class="menu-item">
-                                <div class="item-names">
-                                    <div class="item-name-ar">${item.name_ar}</div>
-                                    ${item.description ? `<div class="item-description">${item.description}</div>` : ''}
-                                    <div class="item-name-en mobile-only">${item.name_en}</div>
+                                <div class="item-row">
+                                    <div class="item-names">
+                                        <div class="item-name-ar">${item.name_ar}</div>
+                                        <div class="item-name-en">${item.name_en}</div>
+                                    </div>
+                                    <div class="item-dots"></div>
+                                    <div class="item-prices">
+                                        ${priceS}
+                                        ${priceD}
+                                    </div>
                                 </div>
-                                <div class="price-s ${naClassS}">${priceS}${symbolS}</div>
-                                <div class="price-d ${naClassD}">${priceD}${symbolD}</div>
-                                <div class="item-name-en desktop-only" style="display:none">${item.name_en}</div>
+                                ${item.description ? `<div class="item-description">${item.description}</div>` : ''}
                             </div>
                         `;
-                    });
+                    }).join('');
 
-                    // Note logic
-                    const note = cat.id === 'special-coffee' 
-                        ? `<div style="padding:15px; background:rgba(212,175,55,0.05); font-size:0.85rem; text-align:center; color:var(--dark-teal); border-top:1px dashed #ddd;">
-                             <i class="fas fa-star" style="color:var(--gold)"></i> 
+                    // Flavor note for special coffee
+                    const note = cat.id === 'special-coffee'
+                        ? `<div class="category-note">
+                             <i class="fas fa-star"></i> 
                              النكهات: فانيلا – بندق – فستق – شوكولاتة – كراميل – مانجو – توت – تفاح – فراولة
-                           </div>` 
+                           </div>`
                         : '';
 
                     html += `
                         <div class="menu-category" id="${cat.id}">
-                            <h2 class="category-title">${cat.name}</h2>
-                            <div class="menu-table-container">
-                                <div class="menu-header">
-                                    <div>الاسم</div>
-                                    <div>S</div>
-                                    <div>D</div>
-                                    <div>Name</div>
-                                </div>
-                                <div>${itemsHtml}</div>
+                            <h2 class="category-title">${cat.name_ar}</h2>
+                            <div class="category-subtitle">${cat.name}</div>
+                            <div class="menu-grid">
+                                ${itemsHtml}
                                 ${note}
                             </div>
                         </div>
@@ -767,19 +1423,13 @@
                 });
 
                 container.innerHTML = html || '<div style="text-align:center; padding:40px;">لا توجد عناصر</div>';
-                
-                // Show English names on desktop only via simple CSS logic injection (optional but cleaner)
-                if(window.innerWidth > 768) {
-                    document.querySelectorAll('.desktop-only').forEach(el => el.style.display = 'block');
-                    document.querySelectorAll('.mobile-only').forEach(el => el.style.display = 'none');
-                }
             });
         }
 
         // Scroll Top Logic
         function setupScrollTop() {
             const btn = document.getElementById('scrollTopBtn');
-            
+
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 300) {
                     btn.classList.add('visible');
@@ -795,4 +1445,5 @@
 
     </script>
 </body>
+
 </html>
